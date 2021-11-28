@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" async></script>
+</head>
+<body>
+    <form action="" >
+        <img src="img/close-svgrepo-com.svg" alt="close">
+        <h3>Регистрация</h3>
+        <p>Шаг первый</p>
+
+        <section id="firstStep">
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Фамилия">
+            <input type="text" placeholder="E-mail">
+            <input type="text" placeholder="Телефон">
+            <button id="nextPage">Продолжить</button>
+        </section>
+        <section id="secondStep" class="hidden">
+            <input type="text" placeholder="Город">
+            <div>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Мужчина</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Женщина</label>
+            </div>
+            <div>
+                <input type="checkbox" id="scales" name="scales">
+                <label for="scales">Подтверждаю, что мне исполнилось 18 лет</label></div>
+            <div>
+                <input type="checkbox" id="scales" name="scales">
+                <label for="scales">Подтверждаю согласие на обработку персональных данных, в соответствии с Политикой персональных данных ООО «Компания»</label>
+            </div>
+            <div>
+                <input type="checkbox" id="scales" name="scales">
+                <label for="scales">Подтверждаю согласие на получение рекламной информации от ООО «Комапния» и ООО «СРМ Солюшнс»</label>
+            </div>
+            <button id="submit">Зарегистрироваться</button>
+        </section>
+    </form>
+
+    <button id="toggleTest">смена страниц</button>
+</body>
+</html>
