@@ -23,7 +23,7 @@ html {
     width: 90%
 }
 
-#registerForm img {
+#registerForm #closeIcon {
     width: 45px;
     height: 45px;
     position: relative;
@@ -99,6 +99,12 @@ html {
 #registerForm div{
     width: 67%;
     display: flex;
+}
+
+#registerForm #captcha {
+    width:67%;
+    height: auto;
+    margin-bottom: 23px;
 }
 
 /* Вторая страница: выбор пола */
