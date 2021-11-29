@@ -9,38 +9,35 @@
     <script src="scripts.js" async></script>
 </head>
 <body>
-    <form action="" >
+    <form action="" id="registerForm">
         <img src="img/close-svgrepo-com.svg" alt="close">
         <h3>Регистрация</h3>
         <p>Шаг первый</p>
-
         <section id="firstStep">
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Фамилия">
-            <input type="text" placeholder="E-mail">
-            <input type="text" placeholder="Телефон">
-            <button id="nextPage">Продолжить</button>
+            <input type="text" placeholder="Имя" id="firstName" class="firstStepInput">
+            <input type="text" placeholder="Фамилия" id="lastName" class="firstStepInput">
+            <input type="text" placeholder="E-mail" id="email" class="firstStepInput">
+            <input type="text" placeholder="Телефон" id="phoneNumber" class="firstStepInput tel">
+            <button id="nextPage" type="button">Продолжить</button>
         </section>
         <section id="secondStep" class="hidden">
-            <input type="text" placeholder="Город">
-            <div>
-                <input type="radio" name="gender" id="male">
-                <label for="male">Мужчина</label>
-                <input type="radio" name="gender" id="female">
-                <label for="female">Женщина</label>
+            <input type="text" placeholder="Город" id="city" class="secondStepInput">
+            <div id="radioGender">
+                <input label="Я - женщина" type="radio" id="female" name="gender" value="female" checked>
+                <input label="Я - мужчина" type="radio" id="male" name="gender" value="male">
             </div>
-            <div>
-                <input type="checkbox" id="scales" name="scales">
-                <label for="scales">Подтверждаю, что мне исполнилось 18 лет</label></div>
-            <div>
-                <input type="checkbox" id="scales" name="scales">
-                <label for="scales">Подтверждаю согласие на обработку персональных данных, в соответствии с Политикой персональных данных ООО «Компания»</label>
+            <div class="checkboxes">
+                <input type="checkbox" id="" name="">
+                <label for=""><p>Подтверждаю, что мне исполнилось 18 лет</p></label></div>
+            <div class="checkboxes">
+                <input type="checkbox" id="" name="">
+                <label for=""><p>Подтверждаю согласие на обработку персональных данных, в соответствии с Политикой персональных данных ООО «Компания»</p></label>
             </div>
-            <div>
-                <input type="checkbox" id="scales" name="scales">
-                <label for="scales">Подтверждаю согласие на получение рекламной информации от ООО «Комапния» и ООО «СРМ Солюшнс»</label>
+            <div class="checkboxes">
+                <input type="checkbox" id="" name="">
+                <label for=""><p>Подтверждаю согласие на получение рекламной информации от ООО «Компания» и ООО «СРМ Солюшнс»</p></label>
             </div>
-            <button id="submit">Зарегистрироваться</button>
+            <button id="submit" type="button">Зарегистрироваться</button>
         </section>
     </form>
 
