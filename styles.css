@@ -30,6 +30,7 @@ html {
     align-self: flex-end;
     margin-top: 10px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 #registerForm h3 {
