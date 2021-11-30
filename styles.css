@@ -66,7 +66,7 @@ html {
     padding-left: 14px;
     font-size: 18px;
     line-height: 21px;
-    color: #BDBDBD;
+    color: black;
 }
 
 #registerForm button{
@@ -78,6 +78,7 @@ html {
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
+    cursor:pointer;
 }
 
 #registerForm .hidden {
@@ -86,11 +87,38 @@ html {
 
 /* Первая страница */
 
-#registerForm #nextPage {
-    margin-bottom: 120px;
+#registerForm #nextPage, #registerForm #submit {
+    margin-bottom: 100px;
+}
+
+#registerForm #nextPage:hover, #registerForm #submit:hover {
+    transform:translateY(-2px);
+    transition: 0.2s;
+    background: #3972e4;
 }
 
 /* Вторая страница */
+
+#registerForm #previousPage {
+    width: auto;
+    height: auto;
+    background: none;
+    box-shadow: none;
+    border:none;
+    color: grey;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#registerForm #previousPage:hover {
+    text-decoration: underline #0151f0;
+    color:#0151f0;
+    transition: color 200ms;
+}
 
 #registerForm #submit {
     margin-bottom: 70px;
@@ -173,6 +201,7 @@ html {
 
 /* Ошибки */
 
-.error {
-    border: red 2px;
+#registerForm section .error {
+    border: solid red 2px !important;
 }
+

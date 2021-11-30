@@ -1,4 +1,5 @@
 document.querySelector("#nextPage").addEventListener('click', nextPageAccess);
+document.querySelector("#previousPage").addEventListener('click', switchPages)
 document.querySelector("#toggleTest").addEventListener('click', switchPages);
 document.querySelector("#submit").addEventListener('click', submitForm);
 
@@ -33,18 +34,32 @@ function nextPageAccess() {
 
     if (newUser.firstName.length > 1) {
         nextPageCheck++;
+        document.getElementById("firstName").classList.remove('error');
+    }else{
+        document.getElementById("firstName").classList.add('error');
     };
 
     if (newUser.lastName.length > 1) {
         nextPageCheck++
+        document.getElementById("lastName").classList.remove('error');
+    }else{
+        document.getElementById("lastName").classList.add('error');
+
     };
 
     if (emailReg.test(newUser.email) === true) {
         nextPageCheck++
+        document.getElementById("email").classList.remove('error');
+    }else{
+        document.getElementById("email").classList.add('error');
+
     };
 
-    if (newUser.phoneNumber.length = 18) {
+    if (newUser.phoneNumber.length > 10) {
         nextPageCheck++
+        document.getElementById("phoneNumber").classList.remove('error');
+    }else{
+        document.getElementById("phoneNumber").classList.add('error');
     };
 
 
@@ -108,9 +123,12 @@ function submitForm() {
 
     if (newUser.city.length > 1) {
         registerCheck++;
+        document.getElementById("city").classList.remove('error');
+    }else{
+        document.getElementById("city").classList.add('error');
     };  
     
-    if (document.querySelectorAll("input[type=checkbox]:checked").length = 3) {
+    if (document.querySelectorAll("input[type=checkbox]:checked").length === 3) {
         registerCheck++;
     };
 
